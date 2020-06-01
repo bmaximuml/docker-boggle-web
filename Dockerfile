@@ -7,8 +7,8 @@ RUN apt-get update && \
   --allow-change-held-packages \
   --autoremove \
   build-essential \
-  python-dev
-#  curl
+  python-dev \
+  curl
 
 RUN pip install uwsgi
 

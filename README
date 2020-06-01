@@ -1,0 +1,5 @@
+# Docker template for Python uWSGI project
+
+1. Initialise your Python project as a submodule with `git submodule add <repo_url>`
+2. Add appropriate values to the Dockerfile
+3. Edit the test script if necessary

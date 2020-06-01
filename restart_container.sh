@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-container_name="CONT_NAME"
-tag="benjilev08/IMAGE_NAME:latest"
-dir="PROJECT_DIR"
+container_name="boggle"
+tag="benjilev08/letter_shuffle_game:latest"
+dir="/home/benji/Documents/docker-boggle-web"
 
 while getopts c:t:d: option
 do
@@ -42,5 +42,4 @@ docker run -d \
   --name $container_name \
   -p 80:80 \
   -p 9191:9191 \
-  --network testnet \
   $tag

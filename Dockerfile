@@ -21,8 +21,6 @@ RUN pip install /var/src/boggle-web
 EXPOSE 80
 EXPOSE 9191
 
-ENV FLASK_SECRET_KEY akjdhuwihqdiuqwhd&87138237098
-
 CMD uwsgi --http 0.0.0.0:80 --wsgi-file \
   "/var/src/boggle-web/boggle_web" --callable app \
   --processes 1 --threads 1 --stats 0.0.0.0:9191
